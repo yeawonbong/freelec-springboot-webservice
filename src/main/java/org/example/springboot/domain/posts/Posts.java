@@ -35,4 +35,9 @@ public class Posts {  // 실제 DB의 테이블과 매칭될 클래스, 보통 E
         기본적인 구조는 생성자를 통해 최종값을 채운 후 DB에 insert하는 것이며, 값 변경이 필요한 경우 해당 이벤트에 맞는 public 메소드를 호출하여 변경하는 것을 전제로 한다.
         본 예제에서는 생성자 대신 @Builder를 통해 제공되는 빌더 클래스를 사용한다.
      */
+
+    public void update(String title, String content) {
+        this.title = title;
+        this.content = content;
+    }
 }
